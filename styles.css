@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-image: url(images/forest_mountains_sunset_cool_weather_minimalism.jpg);
+  font-family: 'Ubuntu',sans-serif;
+  color:#232323;
+}
+
+.today-container{
+  padding:25px 50px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+  height: 400px;
+}
+
+.general-info{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.more-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+  gap:10px;
+  color: #232323;
+}
+
+.main,
+.temp,
+.today-weather-logo{
+  font-size: 44px;
+}
+
+.main,
+.date,
+.time,
+.temp,
+.city{
+  margin-bottom: 10px;
+}
+
+.change-temp-type{
+  color:#232323;
+  outline: none;
+  background-color: #FFF;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 4px 4px rgb(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+}
+
+.search-bar-container{
+  color:#232323;
+  border-bottom: solid 1px #232323;
+  width: fit-content;
+}
+
+.search-bar-container input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color:#232323;
+}
+
+.search-bar-container button#search-button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input::placeholder{
+  color: #232323;
+}
+
+.humidity,
+.temp-min,
+.temp-max,
+.wind-speed{
+  width: 30%;
+  display: flex;
+  gap:10px;
+  font-size: 24px;
+  line-height: 3;
+}
