@@ -13,6 +13,18 @@
     <title>Weather App</title>
   </head>
   <body>
+    <video class="snow-video" autoplay loop muted plays-inline>
+      <source src="videos/snow.mp4" />
+    </video>
+    <video class="rain-video" autoplay loop muted plays-inline>
+      <source src="videos/rain.mp4" />
+    </video>
+    <video class="sunny-video" autoplay loop muted plays-inline>
+      <source src="videos/sunny.mp4" />
+    </video>
+    <video class="overcast-video" autoplay loop muted plays-inline>
+      <source src="videos/overcast.mp4" />
+    </video>
     <div class="today-container">
       <div class="general-info">
         <div class="main"></div>
@@ -32,6 +44,9 @@
           /><button id="search-button">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
+        </div>
+        <div class="error-container">
+          <span class="error">Sorry! City not found</span>
         </div>
       </div>
       <div class="more-info">
