@@ -134,6 +134,14 @@ function displayForecast(lat, lon, tempType) {
         } else if (time.weather[0].main.includes('Rain')) {
           logoDiv.innerHTML = `<i class="fa-solid fa-cloud-rain"></i>`
         }
+        const transformValue = -100 * date.getDate()
+        const animationDuration = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue('--forecast-duration')
+        dayDiv.style.transform = `translateX(${transformValue}%)`
+        dayDiv.style.animation = `forecast-appear ${animationDuration}ms ease-in-out ${
+          animationDuration * date.getDay()
+        }ms forwards`
         dayDiv.appendChild(dayTitle)
         dayDiv.appendChild(maxTempDiv)
         dayDiv.appendChild(minTempDiv)
