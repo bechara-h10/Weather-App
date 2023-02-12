@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-  <script src="https://kit.fontawesome.com/8797b4aa7a.js" crossorigin="anonymous"></script>
-  <title>Weather App</title>
-</head>
-<body>
-  <div class="today-container">
-    <div class="general-info">
-      <div class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/8797b4aa7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="today-container">
+      <div class="general-info">
+        <div class="main"></div>
+        <div class="city"></div>
+        <div class="date"></div>
+        <div class="time"></div>
+        <div class="temp"></div>
+        <div class="button-div">
+          <button class="change-temp-type">Display °F</button>
+        </div>
+        <div class="today-weather-logo"></div>
+        <div class="search-bar-container">
+          <input
+            type="text"
+            id="search-location"
+            placeholder="Search Location..."
+          /><button id="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
       </div>
-      <div class="city"></div>
-      <div class="date"></div>
-      <div class="time"></div>
-      <div class="temp"></div>
-      <div class="button-div">
-        <button class="change-temp-type">Display °F</button>
-      </div>
-      <div class="today-weather-logo">
-        
-      </div>
-      <div class="search-bar-container">
-        <input type="text" id="search-location" placeholder="Search Location..."><button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div class="more-info">
+        <div class="humidity">
+          <div class="info-logo">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <div class="info">
+            <div class="info-title">Humidity</div>
+            <div class="info-value"></div>
+          </div>
+        </div>
+        <div class="temp-min">
+          <div class="info-logo">
+            <i class="fa-solid fa-temperature-quarter"></i>
+          </div>
+          <div class="info">
+            <div class="info-title">Temperature Min</div>
+            <div class="info-value"></div>
+          </div>
+        </div>
+        <div class="temp-max">
+          <div class="info-logo">
+            <i class="fa-solid fa-temperature-full"></i>
+          </div>
+          <div class="info">
+            <div class="info-title">Temperature Max</div>
+            <div class="info-value"></div>
+          </div>
+        </div>
+        <div class="wind-speed">
+          <div class="info-logo">
+            <i class="fa-solid fa-wind"></i>
+          </div>
+          <div class="info">
+            <div class="info-title">Wind Speed</div>
+            <div class="info-value"></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="more-info">
-      <div class="humidity">
-        <div class="info-logo">
-          <i class="fa-solid fa-droplet"></i>
-        </div>
-        <div class="info">
-          <div class="info-title">Humidity</div>
-          <div class="info-value"></div>
-        </div>
-      </div>
-      <div class="temp-min">
-        <div class="info-logo">
-          <i class="fa-solid fa-temperature-quarter"></i>
-        </div>
-        <div class="info">
-          <div class="info-title">Temperature Min</div>
-          <div class="info-value"></div>
-        </div>
-      </div>
-      <div class="temp-max">
-        <div class="info-logo">
-          <i class="fa-solid fa-temperature-full"></i>
-        </div>
-        <div class="info">
-          <div class="info-title">Temperature Max</div>
-          <div class="info-value"></div>
-        </div>
-      </div>
-      <div class="wind-speed">
-        <div class="info-logo">
-          <i class="fa-solid fa-wind"></i>
-        </div>
-        <div class="info">
-          <div class="info-title">Wind Speed</div>
-          <div class="info-value"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="forecast-container">
-  </div>
-</body>
+    <div class="forecast-container"></div>
+  </body>
 </html>
