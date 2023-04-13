@@ -14,11 +14,10 @@ body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   color: #232323;
+  overflow: hidden;
 }
 
 video {
-  width: 100vw;
-  height: 100vh;
   z-index: -100;
   position: absolute;
   visibility: hidden;
